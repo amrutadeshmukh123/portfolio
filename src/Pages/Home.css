@@ -1,0 +1,247 @@
+.home{
+    width: 100%;
+    height: calc(100vh - 95px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 55px 0px;
+}
+.home .info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 70px;
+    padding-left: 13%;
+    margin-top: 50px !important;
+}
+.home .image{
+    width: 40%;
+    height: 100%;
+}
+.home .info h1{
+    font-size: 26px;
+    background: linear-gradient(180deg,blue,steelblue,blueviolet);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding-bottom: 3px;
+}
+.home .info h3{
+    color: #f5b041 ;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+.home .info p{
+    font-size: 17px;
+    padding: 10px 0px;
+    line-height: 25px;
+}
+.home .info  button{
+    position: relative;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    background: #aeb6bf;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 6px;
+    z-index: 1;
+    transition: ease-in 0.4;
+    overflow: hidden;
+}
+.home .info button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: steelblue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+    color: white;
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.home .info button:hover{
+    color: white;
+    font-weight: 500;
+}
+.home .info button:active{
+    background: white;
+    color: black;
+}
+.home .info button:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+    opacity: 1;
+}
+.home .info .icon{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 22px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    margin-top: 20px;
+}
+.home .info .icon i{
+    font-size: 22px;
+    padding: 8px;
+    background: rgb(233, 231, 231);
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.home .info .icon i:hover{ 
+    color: white !important;
+    background: linear-gradient(180deg,blue,steelblue,blueviolet) !important;
+}
+.home .info a:nth-child(1) i{
+    color: #2c3e50;
+}
+.home .info i:nth-child(4){
+    color: #2e86c1;
+}
+.home .info a:nth-child(2) i{
+    color:#27ae60;
+}
+.home .info a:nth-child(3) i{
+    color: #2e86c1;
+}
+.home .info i:active{
+    font-size: 25px;
+}
+.home .image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items :start;
+    justify-content: center;
+    margin-left: 60px;
+}
+.home .image img{
+    width: 360px;
+    height: 360px;
+    object-fit: contain;
+    border: 3px solid #89c2e7;
+    object-position: center;
+    border-radius: 50%;
+}
+.home .image img:hover{
+    transform: scale(1.04);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.342);
+}
+
+@media screen and (max-width:768px){
+    .home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 70px;
+    }
+    .home .info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+    .home .info h1{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .home .info h3{
+        font-size: 17px;
+    }
+    .home .info p{
+        text-align: justify;
+        margin: 0px auto;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .home .info button{
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+    .home .image{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-right: 60px;
+    }
+    .home .image img{
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    
+
+}
+
+@media screen and (max-width:1024px) {
+    .home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 130px;
+    }
+    .home .info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+    .home .info h1{
+        margin-top: 0px;
+        font-size: 22px;
+    }
+    .home .info h3{
+        font-size: 18px;
+    }
+    .home .info p{
+        text-align: justify;
+        margin: 0px auto;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .home .info button{
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+    .home .image{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-right: 60px;
+    }
+    .home .image img{
+        margin-top: 30px;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+}
