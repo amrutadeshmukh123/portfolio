@@ -335,6 +335,7 @@
   }
   .header .mobile-menu{
     display: block;
+    margin-right: 70px !important;
   }
   .header h2{
     font-size: 18px;

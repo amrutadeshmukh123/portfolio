@@ -188,7 +188,7 @@
       margin-bottom: 20px;
     }
     .contact .connect-container form{
-      width: 400px;
+      width: 350px !important;
     }
     form .title h2{
       font-size: 18px;
