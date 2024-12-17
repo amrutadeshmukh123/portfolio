@@ -139,7 +139,7 @@
         padding: 10px 0px;
     }
     .about .about-page .main{
-        width: 100%;
+        width: 125% !important;
     }
     .about-page .main .intro .name h3{
         font-size: 15px;
@@ -161,7 +161,7 @@
     }
 }
 
-@media screen and (max-width:1024px) {
+@media (min-width:768px) and (max-width:1024px) {
   
     .about{
         width:100%;
