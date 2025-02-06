@@ -95,9 +95,10 @@
     align-items: start;
     justify-content: start;
     margin-top: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 .about .about-page .introduction p{
+    width: 100%;
     line-height: 25px;
     padding-bottom: 30px;
     font-size: 15px;
@@ -139,22 +140,26 @@
         padding: 10px 0px;
     }
     .about .about-page .main{
-        width: 125% !important;
+        width: 120% !important;
     }
     .about-page .main .intro .name h3{
         font-size: 15px;
     }
     .about-page .main .intro .name p{
         font-size: 14px;
+        
     }
     .about .about-page .introduction {
-        width: 80% !important;
+        width: 110% !important;
         height: 100%;
         padding: 0px 25px;
         text-align: justify;
     }
     .about .about-page .introduction p{
+        width: 100%;
+        padding-bottom: 20px;
         font-size: 14px;
+        text-align: justify;
     }
     .about .about-page .introduction #highlight{
         font-size: 14px !important;
@@ -192,6 +197,7 @@
     }
     .about-page .main .intro .name p{
         font-size: 14px;
+        text-align: justify;
     }
     .about .about-page .introduction {
         width: 100% !important;

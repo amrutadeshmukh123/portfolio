@@ -206,7 +206,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 4%;
+    padding: 0px 7% !important;
     box-shadow: 0px 0px 10px #53a1d4;
     background: white;
     /* position: fixed;
@@ -299,10 +299,7 @@
   .copyright{
     margin-top: 10px;
     font-size: 13px;
-  }
-
-  
-  
+  } 
 }
 
 
@@ -316,6 +313,7 @@
     padding: 0px 4%;
     box-shadow: 0px 0px 10px #53a1d4;
     background: white;
+    margin: 0px auto !important;
     /* position: fixed;
     top: 0;
     left: 0; */
@@ -326,7 +324,7 @@
   .header .links-mobile{
     position: absolute;
     display: block;
-    right: 0;
+    right: 0 !important;
     top: 120%;
     width: 50%;
     height: 600px;
@@ -334,8 +332,8 @@
     z-index: 1000;
   }
   .header .mobile-menu{
-    display: block;
-    margin-right: 70px !important;
+    display: flex;
+    
   }
   .header h2{
     font-size: 18px;

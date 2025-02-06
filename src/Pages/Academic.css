@@ -89,12 +89,39 @@ main.row{
     .row .col:nth-child(2){
         margin-top: 40px;
     }
+    .col .contents{
+        padding: 0px 20px;
+        border-left: 2px solid steelblue;
+    }
+    .col .contents .box{
+        position: relative;
+        width: 300px;
+        height: 210px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        background: white;
+        cursor: pointer;
+        transition: all ease-in 0.25s;
+        margin-bottom: 30px;
+    }
+    .col .contents .box::before{
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        right: calc(100% + 16px);
+        top: 0;
+        background: steelblue;
+        border: 2px solid steelblue;
+    }
     .box h4{
         font-size: 15px;
     }
     .box h3{
         padding: 5px 0px;
         font-size: 14px;
+        color: blue;
     }
     .box h5{
         margin-bottom: 10px;

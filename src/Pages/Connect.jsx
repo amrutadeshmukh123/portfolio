@@ -23,7 +23,7 @@ export default function Connect() {
             formData.append('subject', data.subject)
             formData.append('message', data.message)
             formData.append('attachment', data.attachment[0])
-            const res = await axios.post('http://localhost:2000/send-email', formData, {
+            const res = await axios.post('https://portfolio-backend-dusky-eight.vercel.app/send-email', formData, {
                 headers: {
                     'Content-type': 'multipart/form-data'
                 }
@@ -79,7 +79,7 @@ export default function Connect() {
                             <div className="icn"> <i className="fa-solid fa-location-dot"></i></div>
                             <div className="text">
                                 <h3>Address</h3>
-                                <p>Ugawa, Akot Road ,Akola , Maharashra - 444 006</p>
+                                <p>Akola, Maharashra - 444 006</p>
                             </div>
                         </div>
                         <div className="box">
@@ -119,46 +119,17 @@ export default function Connect() {
                             <label>Requirement</label>
                             <textarea disabled={loading} {...register('message')} rows='3' required></textarea>
                         </div>
-                        <div className="input-field">
+                        {/* <div className="input-field">
                             <label>Attachment</label>
                             <input disabled={loading} {...register('attachment')} type="file" />
-                        </div>
+                        </div> */}
                         <button disabled={loading} type='submit'>
                             {loading ? 'Sending Mail...!!' : 'Send Mail'}
                         </button>
                     </form>
                 </div>
             </div>
-            {/* <div className="connect-container">
-                <form onSubmit={handleSubmit(onMailSend)}>
-                    <div className="title">
-                        <h2>Send your requirements</h2>
-                    </div>
-                    <div className="input-field">
-                        <label>Fullname</label>
-                        <input disabled={loading} {...register('fullname')} type="text" required />
-                    </div>
-                    <div className="input-field">
-                        <label>Email Address</label>
-                        <input disabled={loading} {...register('emailTo')} type="email" required />
-                    </div>
-                    <div className="input-field">
-                        <label>Subject</label>
-                        <input disabled={loading} {...register('subject')} type="text" required />
-                    </div>
-                    <div className="input-field">
-                        <label>Requirement</label>
-                        <textarea disabled={loading} {...register('message')} rows='3' required></textarea>
-                    </div>
-                    <div className="input-field">
-                        <label>Attachment</label>
-                        <input disabled={loading} {...register('attachment')} type="file" required />
-                    </div>
-                    <button disabled={loading} type='submit'>
-                        {loading ? 'Sending Mail...!!' : 'Send Mail'}
-                    </button>
-                </form>
-            </div> */}
+           
         </>
     )
 }

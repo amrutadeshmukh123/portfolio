@@ -183,6 +183,7 @@
       margin-bottom: 20px;
     }
     .contact-container .contact-content p{
+      width: 100% !important;
       font-size: 15px;
       font-weight: 450;
       margin-bottom: 20px;
