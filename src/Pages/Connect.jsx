@@ -22,7 +22,7 @@ export default function Connect() {
             formData.append('emailTo', data.emailTo)
             formData.append('subject', data.subject)
             formData.append('message', data.message)
-            formData.append('attachment', data.attachment[0])
+            // formData.append('attachment', data.attachment[0])
             const res = await axios.post('https://portfolio-backend-dusky-eight.vercel.app/send-email', formData, {
                 headers: {
                     'Content-type': 'multipart/form-data'
