@@ -7,8 +7,6 @@ import { useState } from 'react';
 export default function Connect() {
 
 
-
-
     const [loading, setloading] = useState(false)
     const { register, handleSubmit, reset } = useForm()
 
@@ -18,12 +16,12 @@ export default function Connect() {
         setTimeout(async () => {
             const formData = new FormData()
             console.log(data)
-            formData.append('fullname', data.fullname)
+            formData.append('fullname', data.fullName)
             formData.append('emailTo', data.emailTo)
             formData.append('subject', data.subject)
             formData.append('message', data.message)
             // formData.append('attachment', data.attachment[0])
-            const res = await axios.post('https://portfolio-backend-dusky-eight.vercel.app/send-email', formData, {
+            const res = await axios.post('https://portfolio-backend2-chi.vercel.app/send-email', formData, {
                 headers: {
                     'Content-type': 'multipart/form-data'
                 }
@@ -105,7 +103,7 @@ export default function Connect() {
                         </div>
                         <div className="input-field">
                             <label>Fullname</label>
-                            <input disabled={loading} {...register('fullname')} type="text" required />
+                            <input disabled={loading} {...register('fullName')} type="text" required />
                         </div>
                         <div className="input-field">
                             <label>Email Address</label>

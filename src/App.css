@@ -332,8 +332,7 @@
     z-index: 1000;
   }
   .header .mobile-menu{
-    display: flex;
-    
+    display: flex;  
   }
   .header h2{
     font-size: 18px;
