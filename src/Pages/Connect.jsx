@@ -1,8 +1,9 @@
-import axios from 'axios';
+// import axios from 'axios';
 import './Connect.css';
 import toast, { Toaster } from 'react-hot-toast';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import axios from 'axios';
 
 export default function Connect() {
 
@@ -23,7 +24,7 @@ export default function Connect() {
             // formData.append('attachment', data.attachment[0])
             const res = await axios.post('https://portfolio-backend2-chi.vercel.app/send-email', formData, {
                 headers: {
-                    'Content-type': 'multipart/form-data'
+                    'Content-type': 'application/json'
                 }
             })
             const resData = res.data
