@@ -22,7 +22,7 @@ export default function Connect() {
             formData.append('subject', data.subject)
             formData.append('message', data.message)
             // formData.append('attachment', data.attachment[0])
-            const res = await axios.post('https://portfolio-backend2-chi.vercel.app/send-email', formData, {
+            const res = await axios.post('https://portfolio-backend2-7n1k.vercel.app/send-email', formData, {
                 headers: {
                     'Content-type': 'application/json'
                 }

@@ -63,12 +63,12 @@ function App() {
       <div className="header">
         <h2>Amruta Ingle</h2>
         <div className= {mobile ? 'links-mobile' : "links"} onclick={()=>setMobile(false)}>
-          <NavLink to='/' >Home</NavLink>
-          <NavLink to='/about' >About Me</NavLink>
-          <NavLink to='/academic' >Academics</NavLink>
-          <NavLink to='/skill' >Skills</NavLink>
-          <NavLink to='/project' >Projects</NavLink>
-          <NavLink to='/connect' >Connect Me</NavLink>
+          <NavLink to='/' onClick={() => setMobile(false)}>Home</NavLink>
+          <NavLink to='/about' onClick={() => setMobile(false)}>About Me</NavLink>
+          <NavLink to='/academic' onClick={() => setMobile(false)}>Academics</NavLink>
+          <NavLink to='/skill' onClick={() => setMobile(false)}>Skills</NavLink>
+          <NavLink to='/project' onClick={() => setMobile(false)}>Projects</NavLink>
+          <NavLink to='/connect' onClick={() => setMobile(false)}>Connect Me</NavLink>
         </div>
         <div className='mobile-menu' onClick={()=>setMobile(!mobile)}><i className={mobile ? "fa-solid fa-xmark" :"fa-solid fa-bars"}></i></div>
       </div>
