@@ -17,7 +17,7 @@ function App() {
 
   useGSAP(()=>{
 
-    const tl = gsap.timeline()
+    // const tl = gsap.timeline()
 
     // tl.from('.header',{
     //     opacity:0.5,

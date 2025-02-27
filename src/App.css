@@ -68,7 +68,7 @@
 .footer{
   width: 100%;
   height: 190px;
-  background-color: whitesmoke;
+  background-color: rgb(243, 240, 240);
   display: flex;
   flex-direction: row !important;
   align-items: start;

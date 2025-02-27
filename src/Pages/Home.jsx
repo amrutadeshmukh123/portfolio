@@ -81,7 +81,7 @@ export default function Home() {
                     <p>Welcome to my portfolio! I'm a passionate web developer specializing in creating responsive,
                         user-friendly websites. With a keen eye for design and a commitment to clean code, I turn ideas into
                         functional digital experiences. Explore my work and let's build something amazing together.</p>
-                    <a href="http://localhost:2000/attachments/1734184782217.pdf" target='_blank'><button>Download CV</button></a>
+                    <a href="https://drive.google.com/file/d/1dcQFGytx1TqZsU5VeXRfoPyXGiuyQ8Gw/view?usp=drive_link" target='_blank'><button>Download CV</button></a>
 
                     <div className="icon">
                         <a href="https://github.com/amrutadeshmukh123" target='_blank'><i className="fa-brands fa-github"></i></a>
