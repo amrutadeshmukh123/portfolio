@@ -9,10 +9,6 @@ export default function Project() {
 
     // const projectAll = useRef()
     
-
-
-
-
     // useEffect(() => {
     //     gsap.registerPlugin(ScrollTrigger)
     //     gsap.from(projectAll.current, {
@@ -25,46 +21,29 @@ export default function Project() {
     //             end: "end 2000px",
     //             scrub: 1,
     //         }
-    //     })
-      
-        
+    //     })        
     // }, [])
 
 
 
     const projects = [
        
-        {
-            image: "/images/cafe.png",
-            projectName: "Cafe Website",
-            para: "A website where you can place order and give review",
-            skills: "React, CSS, React hooks",
-            gitHub: "https://github.com/amrutadeshmukh123/caffe-website.git",
-            vercel: "https://caffe-website.vercel.app/",
-        },
+        
         {
             image: "/images/Blog manager.png",
             projectName: "Blog Manager Application",
             para: "A app that provides you a platform to share your thoughts",
             skills: "Angular, CSS, Node.Js, Express",
             gitHub: "https://github.com/amrutadeshmukh123/blog-manager.git",
-            vercel: "https://blog-manager-gilt.vercel.app/",
+            vercel: "https://blog-manager-wmjl.vercel.app",
         },
         {
-            image: "/images/User generator.png",
-            projectName: "Random User Generator",
-            para: "A fun app that generates random user at the click of a button!",
-            skills: "HTML ,CSS, Javascript, API",
-            gitHub: "https://github.com/amrutadeshmukh123/random-user-generator.git",
-            vercel: "https://random-user-generator-livid.vercel.app/  ",
-        },
-        {
-            image: "/images/gym.png",
-            projectName: "Gym Website",
-            para: "A gym website with dynamic routing ",
-            skills: "React, CSS, React navigation",
-            gitHub: "https://github.com/amrutadeshmukh123/gym-website.git",
-            vercel: "https://gym-website-theta-orpin.vercel.app/",
+            image: "/images/task.png",
+            projectName: "Task Tracker Application",
+            para: "A task management app to track, organize, and prioritize tasks.",
+            skills: "React, HTML, CSS, Express",
+            gitHub: "https://github.com/amrutadeshmukh123/taskmanager-front.git",
+            vercel: "https://taskmanager-front-4qhf.vercel.app/  ",
         },
         {
             image: "/images/toy.png",
@@ -72,15 +51,32 @@ export default function Project() {
             para: "A toy website with dynamic routing  ",
             skills: "Angular, CSS, Dynamic routing",
             gitHub: "https://github.com/amrutadeshmukh123/toy-website.git",
-            vercel: "https://toy-website-ten.vercel.app/home",
+            vercel: "https://toy-website-rgph.vercel.app/",
         },
+        {
+            image: "/images/gym.png",
+            projectName: "Gym Website",
+            para: "A gym website with dynamic routing ",
+            skills: "React, CSS, React navigation",
+            gitHub: "https://github.com/amrutadeshmukh123/gym-website.git",
+            vercel: "https://gym-website-t4zw.vercel.app/",
+        },
+        {
+            image: "/images/cafe.png",
+            projectName: "Cafe Website",
+            para: "A website where you can place order and give review",
+            skills: "React, CSS, React hooks",
+            gitHub: "https://github.com/amrutadeshmukh123/caffe-website.git",
+            vercel: "https://caffe-website-74o8.vercel.app/",
+        },
+        
         {
             image: "/images/weather.png",
             projectName: "Weather Forcast App",
             para: "A weather app which will give weather updates of your city ",
             skills: "React, CSS, Api",
             gitHub: "https://github.com/amrutadeshmukh123/weather-forcast.git",
-            vercel: "https://weather-forcast-chi.vercel.app/",
+            vercel: "https://weather-forcast-gg97.vercel.app/",
         },
         {
             image: "/images/form.png",
@@ -88,7 +84,15 @@ export default function Project() {
             para: "A Student admission form with validations",
             skills: "React, CSS, Form validations",
             gitHub: "https://github.com/amrutadeshmukh123/attribute-validation.git",
-            vercel: "https://attribute-validation.vercel.app/",
+            vercel: "https://attribute-validation-7tgi.vercel.app/",
+        },
+        {
+            image: "/images/spering.png",
+            projectName: "Spering Demo Website",
+            para: "A demo website showcasing Spering framework features.",
+            skills: "HTML, CSS",
+            gitHub: "https://github.com/amrutadeshmukh123/spering-website.git",
+            vercel: "https://spering-website.vercel.app/",
         },
         {
             image: "/images/add.png",
@@ -96,7 +100,7 @@ export default function Project() {
             para: "A form where we first add student and then can see names",
             skills: "React, CSS, localstorage",
             gitHub: "https://github.com/amrutadeshmukh123/add-view-user.git",
-            vercel: "https://add-view-user.vercel.app/",
+            vercel: "https://add-view-user-rpjh.vercel.app/",
         },
         {
             image: "/images/joke generator.png",
@@ -116,11 +120,11 @@ export default function Project() {
         },
         {
             image: "/images/User generator.png",
-            projectName: "Random Joke Generator",
-            para: "A fun app that generates random user at the click of a button!",
+            projectName: "Random User Generator",
+            para: "An application that generates random user at the click of a button!",
             skills: "HTML ,CSS, Javascript, API",
             gitHub: "https://github.com/amrutadeshmukh123/random-user-generator.git",
-            vercel: "https://random-user-generator-livid.vercel.app/  ",
+            vercel: " https://random-user-generator-at6o.vercel.app/ ",
         },
         {
             image: "/images/resister.png",
@@ -128,7 +132,7 @@ export default function Project() {
             para: "Login resister page with toggling effect",
             skills: "HTML ,CSS, Javascript",
             gitHub: "https://github.com/amrutadeshmukh123/login-resister.git",
-            vercel: " https://login-resister.vercel.app/",
+            vercel: " https://login-resister-uavj.vercel.app/",
         },
         {
             image: "/images/todo.png",
@@ -136,7 +140,7 @@ export default function Project() {
             para: "With th help of this you can manage your daily routine.",
             skills: "HTML ,CSS, Javascript",
             gitHub: "https://github.com/amrutadeshmukh123/todo-list.git",
-            vercel: " https://todo-list-nine-gamma-89.vercel.app/",
+            vercel: "https://todo-list-mrax.vercel.app/",
         },
         {
             image: "/images/calculator.png",
@@ -144,7 +148,7 @@ export default function Project() {
             para: "Designed a calculator whre we can perform the operations",
             skills: "HTML ,CSS, Javascript",
             gitHub: "https://github.com/amrutadeshmukh123/calculator.git",
-            vercel: " https://calculator-gamma-cyan.vercel.app/",
+            vercel: " https://calculator-h35r.vercel.app/",
         },
 
     ];

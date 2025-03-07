@@ -9,9 +9,11 @@ import Connect from './Pages/Connect'
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import NotFoundComp from './Pages/Not'
 
 
 function App() {
+
 
   const [mobile,setMobile] = useState(false)
 
@@ -22,34 +24,7 @@ function App() {
     // tl.from('.header',{
     //     opacity:0.5,
     //     y:-400
-    // }).from('.header h2',{
-    //     opacity:0.5,
-    //     y:-400
-    // }).from('.header .links a',{
-    //     opacity:0,
-    //     stagger:0.35,
-    //     y:-200
     // })
-    
-    // .from('.header .links button',{
-    //     opacity:0,
-    //     x:200
-    // })
-    // .from('.home',{
-    //     opacity:0,
-    //     y:-300
-    // }).from('.home h1',{
-    //     opacity:0,
-    //     scale:0.2
-    // }).from('.home .field p',{
-    //     opacity:0,
-    //     scale:5,
-    //     rotate:45,
-    //     stagger:0.1
-    // }).from('.home button',{
-    //     opacity:0,
-    //     scale:2,
-    //     y:-200
     // }).from('.home .image img',{
     //     opacity:0,
     //     scale:0,
@@ -79,6 +54,7 @@ function App() {
         <Route path='/skill' Component={Skill} />
         <Route path='/project' Component={Project} />
         <Route path='/connect' Component={Connect}></Route>
+        <Route path='*' Component={NotFoundComp}/>
       </Routes>
 
       <div className="footer">
